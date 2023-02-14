@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./styles/index.css">
+  <script defer src="./scripts/index.js"></script>
+  <script defer src="./scripts/counter-cart.js"></script>
+</head>
+<body>
+  <header data-expanded-before="false" class="header">
+    <nav class="nav | nav-container flex-align-center">
+      <div data-shown="false" class="order-container">
+        <h3 class="order-container__title">Cart</h3>
+
+        <div class="order-container__order">
+          <p id="toggleParagraph" class="paragraph">Your card is empty</p>
+          <!-- <div class="cart-preview | flex-align-center">
+            <div class="cart-preview__image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+
+            <div class="cart-preview__pricing-information">
+              <p class="paragraph">Fall Limited Edition Sneakers</p>
+              <p class="paragraph">
+                $125.00 x 
+                <span id="quantity">1 </span>
+                <span id="final-price">$375.00</span>
+              </p>
+            </div>
+
+            <button class="cart-preview__delete-button"></button>
+          </div>
+
+          <button class="add-to-cart__button | flex-align-center">
+            Checkout
+          </button> -->
+        </div>
+
+      </div>
+
+      <div class="nav__column-one | flex-align-center">
+        <button aria-expanded="false" aria-controls="nav-links" class="nav__toggle"></button>
+        <div class="nav__logo">
+          <img src="./images/logo.svg" alt="sneakers-logo">
+        </div>
+
+        <ul id="nav-links" aria-expanded="false" class="nav__links | flex-align-center">
+          <li class="nav__link">Collections</li>
+          <li class="nav__link">Men</li>
+          <li class="nav__link">Women</li>
+          <li class="nav__link">About</li>
+          <li class="nav__link">Contact</li>
+        </ul>
+      </div>
+
+      <div class="nav__column-two | flex-align-center">
+        <button class="nav__cart-button">
+        </button>
+        <div>
+          <img class="nav__avatar" src="./images/image-avatar.png" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main | container">
+
+    <div class="image-container">
+      <button aria-controls="carousel" class="arrow arrow-right"></button>
+      <button aria-controls="carousel" class="arrow arrow-left"></button>
+      <div id="carousel" class="image-container-2">
+        <img data-hidden="false" class="image" src="./images/image-product-1.jpg" alt="">
+        <img data-hidden="true" class="image" src="./images/image-product-2.jpg" alt="">
+        <img data-hidden="true" class="image" src="./images/image-product-3.jpg" alt="">
+        <img data-hidden="true" class="image" src="./images/image-product-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="action">
+      <article class="description">
+        <p class="description__subtitle">SNEAKER COMPANY</p>
+        <h1 class="primary-header">Fall Limited Edition Sneakers</h1>
+        <p class="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </article>
+
+      <div class="pricing | flex-align-center">
+        <div class="pricing__current | flex-align-center">
+          <h3>$125.00</h3>
+          <p>50%</p>
+        </div>
+        <p class="pricing__previous">$250.00</p>
+      </div>
+
+      <div class="button-wrapper">
+        <div class="buttons | flex-align-center">
+          <button class="button__delete"></button>
+          <p class="counter"></p>
+          <button class="button__add"></button>
+        </div>
+
+        <button id="add-to-cart" class="add-to-cart__button | flex-align-center">
+          <img src="./images/icon-cart--white.svg" alt="">
+          Add to cart
+        </button>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
